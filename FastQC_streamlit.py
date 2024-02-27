@@ -48,9 +48,9 @@ def main():
     )
 
     # File upload section
-    st.header("Step 1: Upload Sequencing Data")
+    st.header("Upload Sequencing Data")
     st.write(
-        "Upload your sequencing data file (e.g., FASTQ format) using the file uploader below."
+        "Upload your sequencing data file (only FASTQ format is supported in this app) using the file uploader below."
         "You can drag and drop your file or click the 'Browse files' button."
     )
     uploaded_file = st.file_uploader("Upload FASTQ File", type=["fastq", "fq"])
