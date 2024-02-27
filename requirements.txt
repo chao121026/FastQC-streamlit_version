@@ -1,2 +1,2 @@
 streamlit
-
+apt-get install -y fastqc
