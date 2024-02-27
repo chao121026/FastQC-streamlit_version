@@ -53,8 +53,7 @@ def main():
         "Upload your sequencing data file (e.g., FASTQ format) using the file uploader below."
         "You can drag and drop your file or click the 'Browse files' button."
     )
-    max_upload_size = 10240 * 1024 * 1024
-    uploaded_file = st.file_uploader("Upload FASTQ File", type=["fastq", "fq"], max_upload_size=max_upload_size)
+    uploaded_file = st.file_uploader("Upload FASTQ File", type=["fastq", "fq"])
 
     # Run FastQC analysis when file is uploaded
     if uploaded_file:
